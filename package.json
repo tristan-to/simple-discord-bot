@@ -1,0 +1,25 @@
+{
+  "name": "simple-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start .",
+    "register-commands": "node commands/register-commands.js --global",
+    "start-dev": "nodemon .",
+    "register-commands-dev": "node commands/register-commands.js --guild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.2.0",
+    "@discordjs/rest": "^1.1.0",
+    "discord-api-types": "^0.37.5",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.2",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4"
+  }
+}
